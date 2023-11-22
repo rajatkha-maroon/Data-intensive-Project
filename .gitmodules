@@ -1,0 +1,3 @@
+[submodule "Qsim"]
+	path = Qsim
+	url = https://github.com/wtangiit/Qsim
