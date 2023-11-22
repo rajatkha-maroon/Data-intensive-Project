@@ -1,0 +1,8 @@
+1. Intrepid
+-> Job traces don't have (enough) simultaneous running jobs (multilocation/subblock)
+
+2. Mira
+-> These job traces have simultaneous running jobs (in approx. ascending order)
+2013, 2018, 2014, 2016, 2017, 2015 (very high number)
+
+Select Mira 2015 trace!
