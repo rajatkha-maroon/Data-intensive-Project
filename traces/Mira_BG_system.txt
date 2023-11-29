@@ -1,0 +1,28 @@
+No. of racks - 48
+No. of midplanes within a rack - 2
+No. of node boards within a midplane - 16
+No. of nodes in a node board - 32
+No. of cores in a node - 16
+
+Total nodes: 48*2*16*32 = 49152
+Total cores: 49152*16 = 786432
+
+The nodes are laid across within 5 dimensions in a midplane of size 4x4x4x4x2, thus giving a total of 512 nodes in a midplane.
+Memory (DDR3) is equally distributed across nodes.
+Memory per node - 768TB/49152 = 16GB
+
+1. Machine name: MIR-x1x2x3x4x5-y1y2y3y4y5-n
+Each xi and yi are the node indices (start and end) in each dimension.
+
+2. Resources are allocated in the granularity of a midplane contiguously. Basically, a job will be allocated at least 512 nodes.
+
+Examples:
+1. MIR-40800-73BF1-2048
+2048 nodes implies 4 midplanes. Here, 4x4x4x16x2 equals 2048.
+Largest no. of nodes in a dimension - 16, hence, it proves a total of 4 miplanes were allocated.
+
+2. MIR-48C00-7BF71-1-1024
+1024 nodes implies 2 midplanes.
+Higest no. of nodes in a dimension - 8 -> 2 midplanes!
+
+'1' in the 4th columns of this name corresponds to the fact that only 1 rack is used since 1 rack can accomodate 2 midplanes.
