@@ -1,3 +1,6 @@
 [submodule "Qsim"]
 	path = Qsim
 	url = https://github.com/wtangiit/Qsim
+[submodule "IBM-Mira-Simulator"]
+	path = IBM-Mira-Simulator
+	url = https://github.com/AlpacaMax/IBM-Mira-Simulator
