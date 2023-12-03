@@ -4,6 +4,3 @@
 [submodule "IBM-Mira-Simulator"]
 	path = IBM-Mira-Simulator
 	url = https://github.com/AlpacaMax/IBM-Mira-Simulator
-[submodule "cobalt"]
-	path = cobalt
-	url = https://github.com/ido/cobalt.git
