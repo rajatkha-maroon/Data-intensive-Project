@@ -81,6 +81,8 @@ def Num_of_Jobs_per_time_slot(data, time_slot, time, sorted_map, end_time, start
 
 def TransferMidPlane(location, job_id):
     location_list = location.split("-")
+    if(location_list[-1] == 'UNKNOWN'):
+        return []
     num_nodes = int(location_list[-1])
     num_midplanes = num_nodes / 512
     midplane_list = []
