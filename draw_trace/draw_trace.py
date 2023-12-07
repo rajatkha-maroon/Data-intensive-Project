@@ -157,7 +157,7 @@ def draw_job_distribution(data,start_job_id,end_job_id, max_end_time, Sorted_sta
     plt.xlim([y_min,y_max])
     plt.ylabel("num of jobs")
     plt.xlabel("executed time")
-    plt.title(f"Jobs ({start_job_id}, {end_job_id}) distribution between start time and end time\n total parallel jobs = {sum(start_num_parallel_jobs_per_slot)}, total jobs = {sum(start_num_jobs_per_slot)}")
+    plt.title(f"Jobs ({start_job_id}, {end_job_id}) distribution between start time and end time\n total parallel jobs = {sum(start_num_parallel_jobs_per_slot)}, total jobs = {sum(start_num_jobs_per_slot)}, average = {np.float64(sum(start_num_parallel_jobs_per_slot))/sum(start_num_jobs_per_slot)}")
     plt.savefig(f"fig/start_time_{start_job_id}_{end_job_id}.png",bbox_inches = 'tight')
 #   plt.show()
 
@@ -170,7 +170,7 @@ def draw_job_distribution(data,start_job_id,end_job_id, max_end_time, Sorted_sta
     plt.xlim([y_min,y_max])
     plt.ylabel("parallel jobs ratio")
     plt.xlabel("executed time")
-    plt.title(f"Parallel job ratio ({start_job_id}, {end_job_id}) distribution between start time and end time\n averge parallel job ratio = {np.float64(sum(start_num_parallel_jobs_per_slot))/sum(start_num_jobs_per_slot)}")
+    plt.title(f"Parallel job ratio ({start_job_id}, {end_job_id}) distribution between start time and end time\n averge parallel job ratio = {np.float64(sum(start_num_ratio_per_slot))/len(start_time_slots)}")
     plt.savefig(f"fig/start_time_ratio_{start_job_id}_{end_job_id}.png",bbox_inches = 'tight')
 #   plt.show()
     
